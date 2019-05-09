@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interfile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a href="#" class="navbar-left"><img style="max-width:133px; margin-top: 5px;" src="http://logos-vector.com/images/logo/xxl/1/6/8/168105/Interfile_cbe60_450x450.png"></a>
+	      <a style="margin-left: 35px" class="navbar-brand">Ferramenta de Exclusão de Tarefas</a>
+	    </div>
+	  </div>
+  </nav>
+</div>
+<div class="container">
+  <br>
+  <ul class="nav nav-tabs nav-justified">
+    <li><a href="/">Activity ID</a></li>
+    <li><a href="byCsv">CSV File</a></li>
+  </ul>
+  <br>
+  <form action="/uploadFile" method="POST" enctype="multipart/form-data">
+  <h5>* exclusão de tarefas via arquivo .csv</h5>
+    <div class="form-group">
+      <label for="url">Domínio (url):</label>
+      <input type="url" class="form-control" id="url" placeholder="Enter url" name="url">
+    </div>
+    <br>
+    <div class="form-group">
+	   <label for="file">Selecione o Arquivo .csv </label>
+	   <input type="file" class="form-control-file" id="file" name="file">
+	</div>
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>
+
+</body>
+</html>
